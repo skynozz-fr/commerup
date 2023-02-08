@@ -8,6 +8,6 @@
      * @version: 1.0.0
      */
 
-    $mysqli = new mysqli('localhost', 'root', '', 'commerup');
+    $mysqli = new mysqli('localhost', 'root', '', 'commerup-v2');
     $mysqli->set_charset('utf8');
 ?>

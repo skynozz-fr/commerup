@@ -76,7 +76,4 @@
  *          - Indique la date
  *          - La quantité total d'articles
  *          - Le prix total de la commande
- * 
- * 
- *
  **********/

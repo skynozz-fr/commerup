@@ -9,6 +9,7 @@
      */
     
     include ('inc_connexion.php'); 
+    include ('inc_identification_user.php');
     include ('inc_cart.php');
 ?>
 

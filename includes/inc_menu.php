@@ -16,6 +16,18 @@
                 <img src="images/logo.png" alt="Logo" height="50" class="d-inline-block align-text-mid me-1">
                 CommerUp
             </a>
+            <div class="text-end">
+                <?php 
+                    // Etat de l'identification de l'utilisateur
+                    if (isset($_SESSION['email'])) {
+                        echo 'Vous etes connecté en tant que "<strong>' . $_SESSION['email'] . '</strong>"';
+                        echo '<a class="ms-2 me-5" href="logout.php"><button type="button" class="btn btn-outline-dark">Déconnexion</button></a>';
+                    } 
+                    else {
+                        echo '<a class="me-5" href="connect.php"><button type="button" class="btn btn-outline-dark me-2">Connexion</button></a>';
+                    }
+                ?>  
+            </div>
             <a class="nav-link link-dark me-5 fs-5" href="index.php">
                 <i class="bi bi-house-heart fs-3"></i>
                 Accueil
