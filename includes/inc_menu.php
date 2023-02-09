@@ -24,7 +24,7 @@
                         echo '<a class="ms-2 me-5" href="logout.php"><button type="button" class="btn btn-outline-dark">Déconnexion</button></a>';
                     } 
                     else {
-                        echo '<a class="me-5" href="connect.php"><button type="button" class="btn btn-outline-dark me-2">Connexion</button></a>';
+                        echo '<a class="me-5" href="connect.php?from=menu"><button type="button" class="btn btn-outline-dark me-2">Connexion</button></a>';
                     }
                 ?>  
             </div>

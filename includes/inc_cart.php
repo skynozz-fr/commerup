@@ -85,7 +85,7 @@
             $success = true;
             $message = "Votre panier a bien été vidé";
         }
-    }
+    } 
 
     /** On initialise la quantité d'article */
     $total_quantity = 0;

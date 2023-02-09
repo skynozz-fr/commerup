@@ -1,4 +1,13 @@
 <?php
+    /** 
+     * Vérification de l'identification de l'utilisateur
+     * 
+     * @package: inc_identification_user.php
+     * @author: Hugo <borgne.hugo@gmail.com>
+     * @since: 09/02/2023
+     * @version: 1.0.0
+     */ 
+
     include ('inc_connexion.php');
 
     session_start();

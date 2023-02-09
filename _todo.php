@@ -2,8 +2,8 @@
 
 /***********
  * Feature 1
- ***********
- *
+ *********** 
+ * 
  * @todo: Dupliquer l'évaluation 2
  * @todo: Lui créer sa base de données  
  * @todo: Header : Ajouter un lien "Register"
