@@ -11,14 +11,18 @@
     include ('includes/inc_header.php'); 
 
     /** L'utilisateur est déjà connecté, on l'envoie sur l'accueil */
-    if (isset($_SESSION['email'])) {
+    if (
+        isset($_SESSION['email']) && 
+        !isset($_POST['submit_register']) &&
+        !isset($_POST['submit_login'])
+    ) {
         header('Location:index.php');
     }
 ?>
 
 <div class="row">
-    <div class="col-5 me-5 mb-5"><?php include ('includes/inc_register.php') ?></div>
-    <div class="col-5  ms-5"><?php include ('includes/inc_login.php') ?></div>
+    <div class="col-5 me-5 mb-5"><?php if (!isset($_POST['submit_login'])) include ('includes/inc_register.php'); ?></div>
+    <div class="col-5 ms-5"><?php if (!isset($_POST['submit_register'])) include ('includes/inc_login.php'); ?></div>
 </div>
 
 <?php include ('includes/inc_footer.php'); ?>

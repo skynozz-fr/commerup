@@ -97,6 +97,5 @@
             </div>
         </div>
     </div>
-    <input type="hidden" name="from" value="<?= $_GET['from'] ?>">
     <button type="submit" name="submit_register" class="btn btn-outline-dark">S'inscrire</button>
 </form>

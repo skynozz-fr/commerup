@@ -21,7 +21,19 @@
                     // Etat de l'identification de l'utilisateur
                     if (isset($_SESSION['email'])) {
                         echo 'Vous etes connecté en tant que "<strong>' . $_SESSION['email'] . '</strong>"';
-                        echo '<a class="ms-2 me-5" href="logout.php"><button type="button" class="btn btn-outline-dark">Déconnexion</button></a>';
+                ?>
+            </div>
+            <div class="text-end">
+                <div class="dropdown me-3 ms-3">
+                    <button class="btn btn-outline-dark dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Mon compte
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item btn btn-outline-dark" href="orders.php">Mes commandes</a></li>
+                        <li><a class="dropdown-item btn btn-outline-dark" href="logout.php">Déconnexion</a></li>
+                    </ul>
+                </div>
+                <?php
                     } 
                     else {
                         echo '<a class="me-5" href="connect.php?from=menu"><button type="button" class="btn btn-outline-dark me-2">Connexion</button></a>';

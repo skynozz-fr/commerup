@@ -84,7 +84,7 @@
                         <?php } else { ?>
                             <form method="post">
                                 <input type="hidden" name="action" value="validate_order">
-                                <a href="success.php" class='btn btn-dark mt-3 me-2'><i class="bi bi-bag-check me-2"></i>Valider ta commande</button>
+                                <a href="success.php" class='btn btn-dark mt-3 me-2'><i class="bi bi-bag-check me-2"></i>Valider ta commande</a>
                             </form>
                         <?php } ?> 
                     </td>
