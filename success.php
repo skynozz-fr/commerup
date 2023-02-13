@@ -1,7 +1,7 @@
 <?php 
 	/** 
 	* Page succès
-	* Affichage de la page succès
+	* Affichage de la page succès et enregistre la commande
 	* 
 	* @package: success.php
 	* @author: Hugo <borgne.hugo@gmail.com>

@@ -1,7 +1,7 @@
 <?php 
     /** 
-     * Page commande
-     * Affichage de la commande du visiteur
+     * Page récapitulatif de la commande
+     * Affichage de la commande du visiteur et de ses informations 
      * 
      * @package: order.php
      * @author: Hugo <borgne.hugo@gmail.com>
