@@ -34,7 +34,8 @@
             <?= $order_row['total_products'] ?> article<?= $order_row['total_products'] > 1 ? 's' : '' ?><br>
             Total : <?= $order_row['total_price'] ?> € <div class="border-bottom"></div>
         </p>
-        <a href="index.php" class="link-secondary">Commander a nouveau</a>
+        <a href="index.php" class="link-secondary">Commander a nouveau</a><br>
+        <a href="#" class="link-secondary">Suivre ma commande</a>
     </div>
 </div>
 

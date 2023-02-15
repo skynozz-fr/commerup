@@ -19,9 +19,10 @@
     $page = 'order';
     $email = $_SESSION['email'];
 
-    $informations = $mysqli->query('SELECT email, firstname, lastname, address, zip_code, city FROM users WHERE email ="' . $email . '"');
+    $informations = $mysqli->query('SELECT email, phone, firstname, lastname, address, zip_code, city FROM users WHERE email ="' . $email . '"');
     $row = $informations->fetch_array(); 
 
+    $phone = $row['phone']; 
     $firstname = $row['firstname'];
     $lastname = $row['lastname'];
     $address = $row['address'];
@@ -37,6 +38,7 @@
     <p class="card-text">
         <?= $lastname . " " . $firstname ?><br>
         <?= $address ?><br>
+        <?= $phone ?><br>
         <?= $zip_code . " " . $city ?><br>
         <a href="mailto:<?= $email ?>" class="link-secondary"><?= $email ?></a>
     </p>

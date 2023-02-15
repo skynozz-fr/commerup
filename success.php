@@ -40,6 +40,7 @@
 <p>Nous préparons votre commande avec soins pour la déposer au plus vite chez vous.</p>
 <hr>
 <p class="mb-0">Date de livraison estimée : entre le 20/02/2023 et le 27/02/2023</p>
+<p class="text-end"><a href="orders.php" class="link-secondary">Voir ma commande</a></p>
 </div>
 
 <?php include ('includes/inc_footer.php'); ?>

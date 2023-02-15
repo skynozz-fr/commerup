@@ -30,6 +30,7 @@
                     </button>
                     <ul class="dropdown-menu">
                         <li><a class="dropdown-item btn btn-outline-dark" href="orders.php">Mes commandes</a></li>
+                        <li><a class="dropdown-item btn btn-outline-dark" href="edit_address.php">Adresse</a></li>
                         <li><a class="dropdown-item btn btn-outline-dark" href="logout.php">Déconnexion</a></li>
                     </ul>
                 </div>

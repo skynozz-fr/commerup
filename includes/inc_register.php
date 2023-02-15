@@ -12,6 +12,7 @@
     if (isset($_POST['submit_register'])) {
         $email = $_POST['email'];
         $password = $_POST['password'];
+        $phone = $_POST['phone'];
         $firstname = $_POST['firstname'];
         $lastname = $_POST['lastname'];
         $address = $_POST['address'];
@@ -20,7 +21,7 @@
         $from = $_POST['from'];
         
         /** On vérifie que les variables ne soit pas vide */
-        if ((empty($email)) OR (empty($password)) OR empty($firstname) OR empty($lastname) OR empty($address) OR empty($zip_code) OR empty($city)) {
+        if (empty($email) OR empty($password) OR empty($phone) OR empty($firstname) OR empty($lastname) OR empty($address) OR empty($zip_code) OR empty($city)) {
             $message_register = "<p class='alert alert-danger'>Veuillez renseignez tout les champs pour vous inscrire.</p>";
 
         /** On vérifie si l'utilisateur existe déjà en bdd */
@@ -33,7 +34,7 @@
             /** Création du compte de l'utilisateur */
             } else {
                 $password_hash = password_hash($password, PASSWORD_BCRYPT); 
-                if ($mysqli->query("INSERT INTO users (email, password , firstname, lastname, address, zip_code, city) VALUES ('$email', '$password_hash', '$firstname', '$lastname', '$address', '$zip_code', '$city')")) {
+                if ($mysqli->query("INSERT INTO users (email, password, phone, firstname, lastname, address, zip_code, city) VALUES ('$email', '$password_hash', '$phone', '$firstname', '$lastname', '$address', '$zip_code', '$city')")) {
                     $message_register = "<p class='alert alert-success'>Votre compte a bien était créé.</p>";
                     
                     /** On connecte l'utilisateur */
@@ -64,6 +65,10 @@
     <div class="form-floating mb-3">
         <input type="password" name="password" class="form-control" placeholder="Mot de passe" required>
         <label>Mot de passe</label>
+    </div>
+    <div class="form-floating mb-3">
+        <input type="tel" pattern="^((\+\d{1,3}(-| )?\(?\d\)?(-| )?\d{1,5})|(\(?\d{2,6}\)?))(-| )?(\d{3,4})(-| )?(\d{4})(( x| ext)\d{1,5}){0,1}$" name="phone" class="form-control" placeholder="Téléphone" required>
+        <label>Télephone</label>
     </div>
     <div class="row">
         <div class="col-6 mb-3">
